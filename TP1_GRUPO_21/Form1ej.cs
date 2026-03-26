@@ -10,11 +10,19 @@ using System.Windows.Forms;
 
 namespace TP1_GRUPO_21
 {
-    public partial class Form1 : Form
+    public partial class Form1ej : Form
     {
-        public Form1()
+        FormPrincipal mainForm;
+
+        public Form1ej(FormPrincipal mainForm)
         {
             InitializeComponent();
+            this.mainForm = mainForm;
+        }
+
+        private void Form1ej_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            mainForm.Show();
         }
     }
 }
