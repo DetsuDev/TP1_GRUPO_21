@@ -36,6 +36,7 @@
             // 
             // button1ej
             // 
+            this.button1ej.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1ej.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1ej.Location = new System.Drawing.Point(12, 12);
             this.button1ej.Name = "button1ej";
@@ -76,7 +77,7 @@
             this.lblIntegrantes.Text = "Integrantes:\r\n\r\n• Tomas Bottelli\r\n\r\n• Santiago Romero\r\n\r\n• Renato Canavesi\r\n\r\n• S" +
     "ebastian Fuentes";
             // 
-            // MainForm
+            // FormPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -86,7 +87,7 @@
             this.Controls.Add(this.button2ej);
             this.Controls.Add(this.button1ej);
             this.Cursor = System.Windows.Forms.Cursors.Default;
-            this.Name = "MainForm";
+            this.Name = "FormPrincipal";
             this.Text = "Formulario Principal";
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.ResumeLayout(false);
