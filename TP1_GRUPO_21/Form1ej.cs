@@ -12,17 +12,41 @@ namespace TP1_GRUPO_21
 {
     public partial class Form1ej : Form
     {
-        FormPrincipal mainForm; // Hago referencia al formulario principal
+        FormPrincipal mainForm;
 
-        public Form1ej(FormPrincipal mainForm) // Recibo el formulario principal como parametro para usarlo cuando se cierre este formulario
+        public Form1ej(FormPrincipal mainForm)
         {
             InitializeComponent();
-            this.mainForm = mainForm; // Guardo la referencia en una variable
+            this.mainForm = mainForm;
+            // Prueba de branch
         }
 
-        private void Form1ej_FormClosed(object sender, FormClosedEventArgs e) // Al momento de cerrar el formulario del ej1
+        private void Form1ej_FormClosed(object sender, FormClosedEventArgs e)
         {
-            mainForm.Show(); // Muestro el formulario principal
+            mainForm.Show();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+        
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            if (txtNombres.Text != "")
+            {
+                lbIzquierda.Items.Add(txtNombres.Text);
+                txtNombres.Text = "";
+            }
+            else
+            {
+                MessageBox.Show("Debe ingresar un nombre");
+            }
         }
     }
 }
