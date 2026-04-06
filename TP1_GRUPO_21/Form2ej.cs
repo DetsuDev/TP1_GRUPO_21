@@ -28,7 +28,15 @@ namespace TP1_GRUPO_21
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            listElementos.Items.Add(txtNombre.Text + " " + txtApellido.Text); // Agrega el nombre completo a la lista
+            if (!(string.IsNullOrWhiteSpace(txtNombre.Text)) && !(string.IsNullOrWhiteSpace(txtApellido.Text)))
+            {
+                listElementos.Items.Add(txtNombre.Text + " " + txtApellido.Text); // Agrega el nombre completo a la lista
+
+            }
+            else
+            {
+                MessageBox.Show("Complete los campos para agregar los elementos a la lista");
+            }
         }
 
 
