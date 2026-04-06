@@ -26,16 +26,6 @@ namespace TP1_GRUPO_21
             mainForm.Show();
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnAgregar_Click(object sender, EventArgs e)
         {
             string nuevoNombre = txtNombres.Text.Trim();
@@ -92,13 +82,5 @@ namespace TP1_GRUPO_21
             lbIzquierda.Items.Clear();
         }
 
-
-
-
-
-        private void lbPersonas2_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

@@ -28,5 +28,12 @@ namespace TP1_GRUPO_21
         {
 
         }
+
+        private void button2ej_Click(object sender, EventArgs e)
+        {
+            Form2ej ejercicio2Form = new Form2ej(this);
+            ejercicio2Form.Show();
+            this.Hide();
+        }
     }
 }

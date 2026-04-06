@@ -1,0 +1,36 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace TP1_GRUPO_21
+{
+    public partial class Form2ej : Form
+    {
+
+        FormPrincipal mainForm;
+        public Form2ej(FormPrincipal mainForm)
+        {
+            InitializeComponent();
+            this.mainForm = mainForm;
+        }
+
+
+        private void Form2ej_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            mainForm.Show();
+        }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            listElementos.Items.Add(txtNombre.Text + " " + txtApellido.Text); // Agrega el nombre completo a la lista
+        }
+
+
+    }
+}
