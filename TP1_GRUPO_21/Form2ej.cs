@@ -25,13 +25,18 @@ namespace TP1_GRUPO_21
         {
             mainForm.Show();
         }
-
+        private void Form2ej_Load(object sender, EventArgs e)
+        {
+            listElementos.Sorted = true; 
+        }
         private void btnAgregar_Click(object sender, EventArgs e)
         {
             if (!(string.IsNullOrWhiteSpace(txtNombre.Text)) && !(string.IsNullOrWhiteSpace(txtApellido.Text)))
             {
-                listElementos.Items.Add(txtNombre.Text + " " + txtApellido.Text); // Agrega el nombre completo a la lista
-
+                listElementos.Items.Add(txtNombre.Text + " " + txtApellido.Text);
+                txtNombre.Text = "";
+                txtApellido.Text = "";
+                txtNombre.Focus();
             }
             else
             {

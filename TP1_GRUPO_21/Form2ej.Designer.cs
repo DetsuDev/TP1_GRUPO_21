@@ -139,6 +139,7 @@
             this.Name = "Form2ej";
             this.Text = "Nombre y apellido";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form2ej_FormClosed);
+            this.Load += new System.EventHandler(this.Form2ej_Load); 
             this.groupDatos.ResumeLayout(false);
             this.groupDatos.PerformLayout();
             this.groupElementos.ResumeLayout(false);
