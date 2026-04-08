@@ -31,19 +31,48 @@ namespace TP1_GRUPO_21
         }
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            if (!(string.IsNullOrWhiteSpace(txtNombre.Text)) && !(string.IsNullOrWhiteSpace(txtApellido.Text))) // "IsNullOrWhiteSpace" retorna "true" si detecta si hay un espacio en blanco o no hay texto, con esto verifico que no se inserten datos no validos
+            if (!(string.IsNullOrWhiteSpace(txtNombre.Text)) && !(string.IsNullOrWhiteSpace(txtApellido.Text)))
             {
-                listElementos.Items.Add(txtNombre.Text + " " + txtApellido.Text);
-                txtNombre.Text = "";
-                txtApellido.Text = "";
-                txtNombre.Focus();
+                string nuevoNombre = txtNombre.Text.Trim() + " " + txtApellido.Text.Trim();
+                bool yaExiste = false;
+
+                foreach (var item in listElementos.Items)
+                {
+                   
+                    if (item.ToString().ToUpper() == nuevoNombre.ToUpper())
+                    {
+                        yaExiste = true;
+                        break;
+                    }
+                }
+
+                if (yaExiste)
+                {
+                    MessageBox.Show("Ese nombre y apellido ya existen en la lista");
+                }
+                else
+                {
+                    listElementos.Items.Add(nuevoNombre);
+                    txtNombre.Text = "";
+                    txtApellido.Text = "";
+                    txtNombre.Focus();
+                }
             }
             else
             {
-                MessageBox.Show("Complete los campos para agregar los elementos a la lista"); // "si termina habiendo datos invalidos, se muestra un MessageBox con el error"
+                MessageBox.Show("Complete los campos para agregar los elementos a la lista");
             }
         }
-
-
+        private void btnBorrar_Click(object sender, EventArgs e)
+        {
+            if (listElementos.SelectedIndex != -1)
+            {
+                listElementos.Items.RemoveAt(listElementos.SelectedIndex);
+            }
+            else
+            {
+                MessageBox.Show("Debe seleccionar un elemento de la lista para poder eliminarlo.");
+            }
+        }
     }
 }

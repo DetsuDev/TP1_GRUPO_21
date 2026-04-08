@@ -55,15 +55,30 @@
             this.groupDatos.TabStop = false;
             this.groupDatos.Text = "Ingreso de Datos";
             // 
-            // lblNombre
+            // btnAgregar
             // 
-            this.lblNombre.AutoSize = true;
-            this.lblNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombre.Location = new System.Drawing.Point(22, 121);
-            this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(76, 20);
-            this.lblNombre.TabIndex = 0;
-            this.lblNombre.Text = "Nombre:";
+            this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregar.Location = new System.Drawing.Point(80, 226);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(125, 53);
+            this.btnAgregar.TabIndex = 4;
+            this.btnAgregar.Text = "Agregar";
+            this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
+            // 
+            // txtApellido
+            // 
+            this.txtApellido.Location = new System.Drawing.Point(105, 163);
+            this.txtApellido.Name = "txtApellido";
+            this.txtApellido.Size = new System.Drawing.Size(156, 20);
+            this.txtApellido.TabIndex = 3;
+            // 
+            // txtNombre
+            // 
+            this.txtNombre.Location = new System.Drawing.Point(105, 120);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(156, 20);
+            this.txtNombre.TabIndex = 2;
             // 
             // lblApellido
             // 
@@ -75,13 +90,15 @@
             this.lblApellido.TabIndex = 1;
             this.lblApellido.Text = "Apellido:";
             // 
-            // txtNombre
+            // lblNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(105, 120);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(156, 20);
-            this.txtNombre.TabIndex = 2;
-            // 
+            this.lblNombre.AutoSize = true;
+            this.lblNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombre.Location = new System.Drawing.Point(22, 121);
+            this.lblNombre.Name = "lblNombre";
+            this.lblNombre.Size = new System.Drawing.Size(76, 20);
+            this.lblNombre.TabIndex = 0;
+            this.lblNombre.Text = "Nombre:";
             // txtApellido
             // 
             this.txtApellido.Location = new System.Drawing.Point(105, 163);
@@ -111,6 +128,14 @@
             this.groupElementos.TabStop = false;
             this.groupElementos.Text = "Elementos";
             // 
+            // listElementos
+            // 
+            this.listElementos.FormattingEnabled = true;
+            this.listElementos.Location = new System.Drawing.Point(6, 19);
+            this.listElementos.Name = "listElementos";
+            this.listElementos.Size = new System.Drawing.Size(301, 303);
+            this.listElementos.TabIndex = 6;
+            // 
             // btnBorrar
             // 
             this.btnBorrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -120,6 +145,7 @@
             this.btnBorrar.TabIndex = 5;
             this.btnBorrar.Text = "Borrar";
             this.btnBorrar.UseVisualStyleBackColor = true;
+            this.btnBorrar.Click += new System.EventHandler(this.btnBorrar_Click);
             // 
             // listElementos
             // 

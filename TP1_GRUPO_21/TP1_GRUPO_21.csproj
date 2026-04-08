@@ -77,6 +77,12 @@
     <EmbeddedResource Include="Form1ej.resx">
       <DependentUpon>Form1ej.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form2ej.resx">
+      <DependentUpon>Form2ej.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3ej.resx">
+      <DependentUpon>Form3ej.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form3ej.resx">
       <DependentUpon>Form3ej.cs</DependentUpon>
     </EmbeddedResource>
