@@ -26,16 +26,6 @@ namespace TP1_GRUPO_21
             mainForm.Show();
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnAgregar_Click(object sender, EventArgs e)
         {
             string nuevoNombre = txtNombres.Text.Trim();
@@ -66,6 +56,15 @@ namespace TP1_GRUPO_21
                 return;
             }
 
+            foreach (var item in lbPersonas2.Items)
+            {
+                if (lbIzquierda.SelectedItem.ToString() == item.ToString()) /// en esta validacion, chequeamos de no agregar un item repetido el el otro ListBox
+                {
+                    MessageBox.Show("Este nombre ya se encuentra en esta lista");
+                    return;
+                }
+            }
+
             lbPersonas2.Items.Add(lbIzquierda.SelectedItem);
             lbIzquierda.Items.Remove(lbIzquierda.SelectedItem);
         }
@@ -73,13 +72,15 @@ namespace TP1_GRUPO_21
         {
             foreach (var item in lbIzquierda.Items)
             {
-                lbPersonas2.Items.Add(item);
+                if (!(lbPersonas2.Items.Contains(item)))
+                { /// en esta validacion, corroboramos que no se agreguen elementos que ya estaban en la otra lista, y los filtra
+
+                    lbPersonas2.Items.Add(item);
+
+                }
             }
             lbIzquierda.Items.Clear();
         }
-        private void lbPersonas2_SelectedIndexChanged(object sender, EventArgs e)
-        {
 
-        }
     }
 }
