@@ -66,6 +66,7 @@
             this.button3ej.TabIndex = 2;
             this.button3ej.Text = "EJERCICIO 3";
             this.button3ej.UseVisualStyleBackColor = true;
+            this.button3ej.Click += new System.EventHandler(this.button3ej_Click);
             // 
             // lblIntegrantes
             // 
