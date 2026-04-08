@@ -55,6 +55,7 @@
             this.button2ej.TabIndex = 1;
             this.button2ej.Text = "EJERCICIO 2";
             this.button2ej.UseVisualStyleBackColor = true;
+            this.button2ej.Click += new System.EventHandler(this.button2ej_Click);
             // 
             // button3ej
             // 
@@ -65,6 +66,7 @@
             this.button3ej.TabIndex = 2;
             this.button3ej.Text = "EJERCICIO 3";
             this.button3ej.UseVisualStyleBackColor = true;
+            this.button3ej.Click += new System.EventHandler(this.button3ej_Click);
             // 
             // lblIntegrantes
             // 
@@ -81,7 +83,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(534, 276);
+            this.ClientSize = new System.Drawing.Size(578, 291);
             this.Controls.Add(this.lblIntegrantes);
             this.Controls.Add(this.button3ej);
             this.Controls.Add(this.button2ej);
