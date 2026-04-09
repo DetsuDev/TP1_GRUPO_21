@@ -37,6 +37,11 @@ namespace TP1_GRUPO_21
                  "\nSexo: " + sexo +
                  "\nEstado Civil: " + estadoCivil +
                  "\nOficio:" + oficios;
+
+            cblOpciones.Enabled = false;
+            gbEstadoCivil.Enabled = false;
+            gbSexo.Enabled = false;
+
  }
 
 
