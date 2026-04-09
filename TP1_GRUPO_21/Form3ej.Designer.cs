@@ -32,11 +32,18 @@
             this.rbMasculino = new System.Windows.Forms.RadioButton();
             this.rbFemenino = new System.Windows.Forms.RadioButton();
             this.gbEstadoCivil = new System.Windows.Forms.GroupBox();
+<<<<<<< HEAD
             this.rbCasado = new System.Windows.Forms.RadioButton();
             this.rbSoltero = new System.Windows.Forms.RadioButton();
             this.cblOpciones = new System.Windows.Forms.CheckedListBox();
             this.btnSelecciones = new System.Windows.Forms.Button();
             this.lblResultado = new System.Windows.Forms.Label();
+=======
+            this.cblOpciones = new System.Windows.Forms.CheckedListBox();
+            this.btnSelecciones = new System.Windows.Forms.Button();
+            this.rbSoltero = new System.Windows.Forms.RadioButton();
+            this.rbCasado = new System.Windows.Forms.RadioButton();
+>>>>>>> 72f6da85ccc1ff8fa0bd23d2089f91a60e17d3d2
             this.gbSexo.SuspendLayout();
             this.gbEstadoCivil.SuspendLayout();
             this.SuspendLayout();
@@ -66,7 +73,10 @@
             // rbFemenino
             // 
             this.rbFemenino.AutoSize = true;
+<<<<<<< HEAD
             this.rbFemenino.Checked = true;
+=======
+>>>>>>> 72f6da85ccc1ff8fa0bd23d2089f91a60e17d3d2
             this.rbFemenino.Location = new System.Drawing.Point(7, 20);
             this.rbFemenino.Name = "rbFemenino";
             this.rbFemenino.Size = new System.Drawing.Size(71, 17);
@@ -86,6 +96,7 @@
             this.gbEstadoCivil.TabStop = false;
             this.gbEstadoCivil.Text = "Estado Civil";
             // 
+<<<<<<< HEAD
             // rbCasado
             // 
             this.rbCasado.AutoSize = true;
@@ -117,6 +128,11 @@
             "Programador",
             "Reparador de PC",
             "Tester"});
+=======
+            // cblOpciones
+            // 
+            this.cblOpciones.FormattingEnabled = true;
+>>>>>>> 72f6da85ccc1ff8fa0bd23d2089f91a60e17d3d2
             this.cblOpciones.Location = new System.Drawing.Point(165, 176);
             this.cblOpciones.Name = "cblOpciones";
             this.cblOpciones.Size = new System.Drawing.Size(120, 94);
@@ -132,6 +148,7 @@
             this.btnSelecciones.UseVisualStyleBackColor = true;
             this.btnSelecciones.Click += new System.EventHandler(this.btnSelecciones_Click);
             // 
+<<<<<<< HEAD
             // lblResultado
             // 
             this.lblResultado.AutoSize = true;
@@ -139,26 +156,58 @@
             this.lblResultado.Name = "lblResultado";
             this.lblResultado.Size = new System.Drawing.Size(0, 13);
             this.lblResultado.TabIndex = 4;
+=======
+            // rbSoltero
+            // 
+            this.rbSoltero.AutoSize = true;
+            this.rbSoltero.Location = new System.Drawing.Point(18, 20);
+            this.rbSoltero.Name = "rbSoltero";
+            this.rbSoltero.Size = new System.Drawing.Size(58, 17);
+            this.rbSoltero.TabIndex = 0;
+            this.rbSoltero.TabStop = true;
+            this.rbSoltero.Text = "Soltero";
+            this.rbSoltero.UseVisualStyleBackColor = true;
+            // 
+            // rbCasado
+            // 
+            this.rbCasado.AutoSize = true;
+            this.rbCasado.Location = new System.Drawing.Point(18, 44);
+            this.rbCasado.Name = "rbCasado";
+            this.rbCasado.Size = new System.Drawing.Size(61, 17);
+            this.rbCasado.TabIndex = 1;
+            this.rbCasado.TabStop = true;
+            this.rbCasado.Text = "Casado";
+            this.rbCasado.UseVisualStyleBackColor = true;
+>>>>>>> 72f6da85ccc1ff8fa0bd23d2089f91a60e17d3d2
             // 
             // Form3ej
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(456, 450);
+<<<<<<< HEAD
             this.Controls.Add(this.lblResultado);
+=======
+>>>>>>> 72f6da85ccc1ff8fa0bd23d2089f91a60e17d3d2
             this.Controls.Add(this.btnSelecciones);
             this.Controls.Add(this.cblOpciones);
             this.Controls.Add(this.gbEstadoCivil);
             this.Controls.Add(this.gbSexo);
             this.Name = "Form3ej";
             this.Text = "Form3ej";
+<<<<<<< HEAD
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form3ej_FormClosed);
+=======
+>>>>>>> 72f6da85ccc1ff8fa0bd23d2089f91a60e17d3d2
             this.gbSexo.ResumeLayout(false);
             this.gbSexo.PerformLayout();
             this.gbEstadoCivil.ResumeLayout(false);
             this.gbEstadoCivil.PerformLayout();
             this.ResumeLayout(false);
+<<<<<<< HEAD
             this.PerformLayout();
+=======
+>>>>>>> 72f6da85ccc1ff8fa0bd23d2089f91a60e17d3d2
 
         }
 
@@ -172,6 +221,9 @@
         private System.Windows.Forms.RadioButton rbFemenino;
         private System.Windows.Forms.RadioButton rbCasado;
         private System.Windows.Forms.RadioButton rbSoltero;
+<<<<<<< HEAD
         private System.Windows.Forms.Label lblResultado;
+=======
+>>>>>>> 72f6da85ccc1ff8fa0bd23d2089f91a60e17d3d2
     }
 }

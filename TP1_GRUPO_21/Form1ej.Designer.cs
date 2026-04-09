@@ -46,7 +46,6 @@
             this.lblIngrese.Size = new System.Drawing.Size(165, 20);
             this.lblIngrese.TabIndex = 1;
             this.lblIngrese.Text = "Ingrese un nombre:";
-            this.lblIngrese.Click += new System.EventHandler(this.label2_Click);
             // 
             // txtNombres
             // 
@@ -73,7 +72,6 @@
             this.lbIzquierda.Name = "lbIzquierda";
             this.lbIzquierda.Size = new System.Drawing.Size(208, 264);
             this.lbIzquierda.TabIndex = 4;
-            this.lbIzquierda.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // lbPersonas2
             // 
@@ -92,6 +90,7 @@
             this.btnPasar.TabIndex = 6;
             this.btnPasar.Text = ">";
             this.btnPasar.UseVisualStyleBackColor = true;
+            this.btnPasar.Click += new System.EventHandler(this.btnPasar_Click);
             // 
             // btnPasarTodo
             // 
@@ -102,8 +101,9 @@
             this.btnPasarTodo.TabIndex = 7;
             this.btnPasarTodo.Text = ">>";
             this.btnPasarTodo.UseVisualStyleBackColor = true;
+            this.btnPasarTodo.Click += new System.EventHandler(this.btnPasarTodo_Click);
             // 
-            // Form1ej
+            // Nombres
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -115,9 +115,9 @@
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.txtNombres);
             this.Controls.Add(this.lblIngrese);
-            this.Name = "Form1ej";
+            this.Name = "Nombres";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Text = "Form1ej";
+            this.Text = "Nombres";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1ej_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();

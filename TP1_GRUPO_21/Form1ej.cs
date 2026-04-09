@@ -26,27 +26,61 @@ namespace TP1_GRUPO_21
             mainForm.Show();
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-        
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            if (txtNombres.Text != "")
+            string nuevoNombre = txtNombres.Text.Trim();
+
+            if (nuevoNombre == "")
             {
-                lbIzquierda.Items.Add(txtNombres.Text);
-                txtNombres.Text = "";
+                MessageBox.Show("Debe ingresar un nombre.");
+                return;
             }
-            else
+
+            foreach (var item in lbIzquierda.Items)
             {
-                MessageBox.Show("Debe ingresar un nombre");
+                if (item.ToString().ToLower() == nuevoNombre.ToLower())
+                {
+                    MessageBox.Show("El nombre ya existe en la lista.");
+                    return;
+                }
             }
+
+            lbIzquierda.Items.Add(nuevoNombre);
+            txtNombres.Text = "";
         }
+        private void btnPasar_Click(object sender, EventArgs e)
+        {
+            if (lbIzquierda.SelectedItem == null)
+            {
+                MessageBox.Show("Debe seleccionar un nombre de la lista.");
+                return;
+            }
+
+            foreach (var item in lbPersonas2.Items)
+            {
+                if (lbIzquierda.SelectedItem.ToString() == item.ToString()) /// en esta validacion, chequeamos de no agregar un item repetido el el otro ListBox
+                {
+                    MessageBox.Show("Este nombre ya se encuentra en esta lista");
+                    return;
+                }
+            }
+
+            lbPersonas2.Items.Add(lbIzquierda.SelectedItem);
+            lbIzquierda.Items.Remove(lbIzquierda.SelectedItem);
+        }
+        private void btnPasarTodo_Click(object sender, EventArgs e)
+        {
+            foreach (var item in lbIzquierda.Items)
+            {
+                if (!(lbPersonas2.Items.Contains(item)))
+                { /// en esta validacion, corroboramos que no se agreguen elementos que ya estaban en la otra lista, y los filtra
+
+                    lbPersonas2.Items.Add(item);
+
+                }
+            }
+            lbIzquierda.Items.Clear();
+        }
+
     }
 }
