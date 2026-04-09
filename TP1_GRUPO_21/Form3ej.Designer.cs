@@ -36,6 +36,7 @@
             this.rbSoltero = new System.Windows.Forms.RadioButton();
             this.cblOpciones = new System.Windows.Forms.CheckedListBox();
             this.btnSelecciones = new System.Windows.Forms.Button();
+            this.lblResultado = new System.Windows.Forms.Label();
             this.gbSexo.SuspendLayout();
             this.gbEstadoCivil.SuspendLayout();
             this.SuspendLayout();
@@ -131,11 +132,20 @@
             this.btnSelecciones.UseVisualStyleBackColor = true;
             this.btnSelecciones.Click += new System.EventHandler(this.btnSelecciones_Click);
             // 
+            // lblResultado
+            // 
+            this.lblResultado.AutoSize = true;
+            this.lblResultado.Location = new System.Drawing.Point(91, 331);
+            this.lblResultado.Name = "lblResultado";
+            this.lblResultado.Size = new System.Drawing.Size(0, 13);
+            this.lblResultado.TabIndex = 4;
+            // 
             // Form3ej
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(456, 450);
+            this.Controls.Add(this.lblResultado);
             this.Controls.Add(this.btnSelecciones);
             this.Controls.Add(this.cblOpciones);
             this.Controls.Add(this.gbEstadoCivil);
@@ -148,6 +158,7 @@
             this.gbEstadoCivil.ResumeLayout(false);
             this.gbEstadoCivil.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -161,5 +172,6 @@
         private System.Windows.Forms.RadioButton rbFemenino;
         private System.Windows.Forms.RadioButton rbCasado;
         private System.Windows.Forms.RadioButton rbSoltero;
+        private System.Windows.Forms.Label lblResultado;
     }
 }
