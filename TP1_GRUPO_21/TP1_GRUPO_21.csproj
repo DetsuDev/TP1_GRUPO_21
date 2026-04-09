@@ -83,9 +83,6 @@
     <EmbeddedResource Include="Form3ej.resx">
       <DependentUpon>Form3ej.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form3ej.resx">
-      <DependentUpon>Form3ej.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FormPrincipal.resx">
       <DependentUpon>FormPrincipal.cs</DependentUpon>
     </EmbeddedResource>

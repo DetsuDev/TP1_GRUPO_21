@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace TP1_GRUPO_21
@@ -27,7 +20,7 @@ namespace TP1_GRUPO_21
         }
         private void Form2ej_Load(object sender, EventArgs e)
         {
-            listElementos.Sorted = true; 
+            listElementos.Sorted = true;
         }
         private void btnAgregar_Click(object sender, EventArgs e)
         {
@@ -38,7 +31,7 @@ namespace TP1_GRUPO_21
 
                 foreach (var item in listElementos.Items)
                 {
-                   
+
                     if (item.ToString().ToUpper() == nuevoNombre.ToUpper())
                     {
                         yaExiste = true;

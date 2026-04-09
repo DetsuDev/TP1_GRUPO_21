@@ -32,10 +32,10 @@
             this.rbMasculino = new System.Windows.Forms.RadioButton();
             this.rbFemenino = new System.Windows.Forms.RadioButton();
             this.gbEstadoCivil = new System.Windows.Forms.GroupBox();
+            this.rbCasado = new System.Windows.Forms.RadioButton();
+            this.rbSoltero = new System.Windows.Forms.RadioButton();
             this.cblOpciones = new System.Windows.Forms.CheckedListBox();
             this.btnSelecciones = new System.Windows.Forms.Button();
-            this.rbSoltero = new System.Windows.Forms.RadioButton();
-            this.rbCasado = new System.Windows.Forms.RadioButton();
             this.gbSexo.SuspendLayout();
             this.gbEstadoCivil.SuspendLayout();
             this.SuspendLayout();
@@ -65,6 +65,7 @@
             // rbFemenino
             // 
             this.rbFemenino.AutoSize = true;
+            this.rbFemenino.Checked = true;
             this.rbFemenino.Location = new System.Drawing.Point(7, 20);
             this.rbFemenino.Name = "rbFemenino";
             this.rbFemenino.Size = new System.Drawing.Size(71, 17);
@@ -84,9 +85,37 @@
             this.gbEstadoCivil.TabStop = false;
             this.gbEstadoCivil.Text = "Estado Civil";
             // 
+            // rbCasado
+            // 
+            this.rbCasado.AutoSize = true;
+            this.rbCasado.Checked = true;
+            this.rbCasado.Location = new System.Drawing.Point(18, 20);
+            this.rbCasado.Name = "rbCasado";
+            this.rbCasado.Size = new System.Drawing.Size(61, 17);
+            this.rbCasado.TabIndex = 1;
+            this.rbCasado.TabStop = true;
+            this.rbCasado.Text = "Casado";
+            this.rbCasado.UseVisualStyleBackColor = true;
+            // 
+            // rbSoltero
+            // 
+            this.rbSoltero.AutoSize = true;
+            this.rbSoltero.Location = new System.Drawing.Point(18, 44);
+            this.rbSoltero.Name = "rbSoltero";
+            this.rbSoltero.Size = new System.Drawing.Size(58, 17);
+            this.rbSoltero.TabIndex = 0;
+            this.rbSoltero.Text = "Soltero";
+            this.rbSoltero.UseVisualStyleBackColor = true;
+            // 
             // cblOpciones
             // 
             this.cblOpciones.FormattingEnabled = true;
+            this.cblOpciones.Items.AddRange(new object[] {
+            "Data Entry",
+            "Operador de PC",
+            "Programador",
+            "Reparador de PC",
+            "Tester"});
             this.cblOpciones.Location = new System.Drawing.Point(165, 176);
             this.cblOpciones.Name = "cblOpciones";
             this.cblOpciones.Size = new System.Drawing.Size(120, 94);
@@ -102,28 +131,6 @@
             this.btnSelecciones.UseVisualStyleBackColor = true;
             this.btnSelecciones.Click += new System.EventHandler(this.btnSelecciones_Click);
             // 
-            // rbSoltero
-            // 
-            this.rbSoltero.AutoSize = true;
-            this.rbSoltero.Location = new System.Drawing.Point(18, 20);
-            this.rbSoltero.Name = "rbSoltero";
-            this.rbSoltero.Size = new System.Drawing.Size(58, 17);
-            this.rbSoltero.TabIndex = 0;
-            this.rbSoltero.TabStop = true;
-            this.rbSoltero.Text = "Soltero";
-            this.rbSoltero.UseVisualStyleBackColor = true;
-            // 
-            // rbCasado
-            // 
-            this.rbCasado.AutoSize = true;
-            this.rbCasado.Location = new System.Drawing.Point(18, 44);
-            this.rbCasado.Name = "rbCasado";
-            this.rbCasado.Size = new System.Drawing.Size(61, 17);
-            this.rbCasado.TabIndex = 1;
-            this.rbCasado.TabStop = true;
-            this.rbCasado.Text = "Casado";
-            this.rbCasado.UseVisualStyleBackColor = true;
-            // 
             // Form3ej
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -135,6 +142,7 @@
             this.Controls.Add(this.gbSexo);
             this.Name = "Form3ej";
             this.Text = "Form3ej";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form3ej_FormClosed);
             this.gbSexo.ResumeLayout(false);
             this.gbSexo.PerformLayout();
             this.gbEstadoCivil.ResumeLayout(false);
