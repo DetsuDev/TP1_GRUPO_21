@@ -19,15 +19,27 @@ namespace TP1_GRUPO_21
             this.mainForm = mainForm;
         }
 
-        private void btnSelecciones_Click(object sender, EventArgs e)
-        {
-            string sexo = rbFemenino.Checked ? "Femenino" : "Masculino";
-            string estadoCivil = rbCasado.Checked ? "Casado" : "Soltero";
+ private void btnSelecciones_Click(object sender, EventArgs e)
+ {
+     string sexo = rbFemenino.Checked ? "Femenino" : "Masculino";
+     string estadoCivil = rbCasado.Checked ? "Casado" : "Soltero";
 
-            lblResultado.Text = "Usted seleccionó los siguientes elementos:" +
-                        "\nSexo: " + sexo +
-                        "\nEstado Civil: " + estadoCivil;
-        }
+     string oficios = "";
+     foreach (var item in cblOpciones.CheckedItems)
+     {
+         oficios += "\n- " + item.ToString();
+     }
+
+     if (oficios == "")
+         oficios = "\n(ninguno seleccionado)";
+
+     lblResultado.Text = "Usted seleccionó los siguientes elementos:" +
+                 "\nSexo: " + sexo +
+                 "\nEstado Civil: " + estadoCivil +
+                 "\nOficio:" + oficios;
+ }
+
+
 
         private void Form3ej_FormClosed(object sender, FormClosedEventArgs e)
         {
